@@ -1,0 +1,13 @@
+use Symfony\Component\Routing\Annotation\Route;
+
+class HelloController {
+    /**
+     * @Route("/hello")
+     */
+    public function hello() {
+        return new response(
+            '<html><body>Hello World</body></html>'
+        );
+    }
+    
+}
